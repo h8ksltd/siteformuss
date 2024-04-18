@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+.modal{
+    
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    margin-top: -1700px;
+    margin-left: 140px;
+    width: 1100px;
+    
+    
+    
+    
+    z-index: 9999;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    
+    
+    padding: 0;
+}
+
+.modal:target {
+    
+    z-index: 9999;
+    opacity: 1; /* делаем окно видимым */
+   pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+
+.modal-dialog {
+
+    
+    position: absolute;
+    width: auto;
+    z-index: 9999;
+    margin: 10px;}
+
+/* Стили для блока с контентом окна */ 
+.modal-content {
+    margin-left: 50px;
+    
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 15px;
+    outline: 0;
+}
+@media (min-width: 768px) {
+  .modal-content {
+    
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+/* Стили заголовка окна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+
+.modal-header p{
+    color: red;
+    font-weight: bold;
+    margin-left: -80px;
+}
+
+.modal-title {
+    
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-left: 30px;
+}
+/* Стили кнопки "х" ("Закрыть")  */
+.close {
+    float: right;
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* Стили для закрывающей кнопки в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* Стили блока основного содержимого окна */
+.modal-body {
+  
+    height: 400px;
+    
+}
+
+.modal-body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.block {
+    text-align: center;
+    margin-left: 65px;
+    margin-top: 30px;
+    
+    text-decoration: none;
+    display: inline-block; /* Добавляем этот стиль для блоков */
+    background-color: white;
+    width: 245px; /* задайте нужную ширину для изображения */
+    height: 300px;
+    border-radius: 10px;
+   
+}
+
+
+
+.block img {
+    width: 190px; /* задайте нужную ширину для изображения */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.block p {
+    margin-top: 25px;
+    color: #333;
+    
+    font-size: 30px;
+}
+
+.row{
+    
+    background-color: #FFCBA4;
+    width: 1000px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}

@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: rgb(253,226,16);
+    background: radial-gradient(circle, rgba(253,226,16,0.6951155462184874) 0%, rgba(148,187,233,0) 100%);
+  }
+  .container {
+
+    height: 60px;
+    height: 1800px;
+    width: 1400px;
+    margin: 0 auto;
+    
+    
+}
+
+.container .navbar{
+    position: fixed;
+    margin-top: -100px;
+    z-index: 9998;
+}
+
+.headimg img{
+    width: 100%;
+    height: 100px;
+    display: block;
+    margin-left: 60px;
+    margin-right: auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+header .logo {
+    height: 100px;
+    margin-left: 180px;
+    margin-top: -140px;
+    padding: 13px;
+}
+
+header nav{
+    
+    margin-left: 1000px;
+    margin-top: -78px;
+}
+
+header nav ul{
+    
+    list-style: none;
+    display: flex;
+    
+    
+}
+
+header nav ul li a{
+    margin-right: 35px;
+    color: #990708;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+     
+}
+
+header nav ul li a:hover{
+    color:#480510
+}
+
+
+.divhero h1, h2{
+    color: #990708;
+    font-weight: bold;
+
+}
+.mainh h1{
+    margin-top: 100px;
+    color: #990708;
+    font-weight: bold;
+}
+
+h1{
+    margin-left: 300px;
+    margin-top: -20px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.divhero{
+    margin-top: 20px;
+    height: 500px;
+}
+
+.hero{
+    margin-top: 20px;
+    height: 500px;
+    width: 1100px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px;
+    background-color: #FFCBA4;
+    border-radius: 15px;
+    border-spacing: 100px;
+    
+}
+
+
+.divhero .hero .text{
+    margin-left: 10px;
+    margin-top: 40px;
+    width: 49%;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: white; 
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: -10px;
+    
+    height: 420px;
+    
+    
+}
+
+.divhero .hero img{
+    height: 432px;
+    margin-left: 120px;
+    margin-top: 40px;
+    border-radius: 15px;
+    
+}
+
+.delivery h1, h2{
+    color: #990708;
+    font-weight: bold;
+
+}
+
+.delivery{
+    margin-top: 130px;
+}
+.del{
+    height: 320px;
+    width: 1100px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px;
+    background-color: #FFCBA4;
+    border-radius: 15px;
+    margin-top: -80px;
+    
+}
+
+.delivery .deltext{
+    margin-left: 60px;
+    margin-top: 30px;
+    width: 60%;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: white; 
+    padding: 10px;
+    
+    height: 240px; 
+}
+
+.delivery img{
+    height: 258px;
+    margin-left: 20px;
+    margin-top: 30px;
+    border-radius: 15px;
+
+}
+
+.slider {
+    
+    position: relative;
+    width: 50%;
+    height: 550px;
+    overflow: hidden;
+    margin-top: 80px;
+    float: right;
+    border: 4px;
+    border-radius: 15px;
+    margin-right: 40px;
+    margin-left: 40px;
+    
+    
+    
+
+  }
+   
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+    
+  }
+   
+  .slide:first-child {
+    opacity: 1;
+  }
+
+.herodev{
+    margin-top: 50px;
+    height: 760px;
+    width: 1100px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px;
+    background-color: #FFCBA4;
+    border-radius: 15px;
+}
+
+.herodev .dev{
+   
+    margin-left: 60px;
+    margin-top: 30px;
+    width: 35%;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: white; 
+    padding: 10px;
+    
+    height: 650px;
+
+}
+
+.dev h1{
+    color: #990708;
+    font-weight: bold;
+    margin-top: 1px;
+    margin-left: 2px;
+}
+
+.footer {
+    background-color: #97a8ce; 
+    height: 20px;
+    width: 100%;   
+
+    position:fixed;
+    left:0px;
+    bottom:0px;
+}
+
+.footer p {
+    display: inline-block; /* Размещаем элементы горизонтально */
+    margin: 0 5px; /* Добавляем отступы между элементами */
+}
+
+
+.show  {
+    
+    animation: 2s show ease;
+  }
+  
+  @keyframes show {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
